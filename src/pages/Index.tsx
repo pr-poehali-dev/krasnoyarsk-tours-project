@@ -114,7 +114,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: `linear-gradient(rgba(44, 122, 123, 0.7), rgba(44, 122, 123, 0.5)), url('https://cdn.poehali.dev/projects/bfbb56ee-f92a-4bba-90ab-3a6fd5390bd5/files/fd82efd0-214e-4643-ae8a-e8fc84f7a0d0.jpg')`
+            backgroundImage: `linear-gradient(rgba(44, 122, 123, 0.7), rgba(44, 122, 123, 0.5)), url('https://cdn.poehali.dev/files/a5a5d2e4-dde4-4eda-a9d9-e92258dda857.jpg')`
           }}
         />
         <div className="container relative z-10 text-center text-white">
