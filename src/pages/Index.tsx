@@ -95,7 +95,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Building2" size={28} className="text-primary" />
+            <Icon name="Users" size={28} className="text-primary" />
             <span className="text-xl font-bold text-primary">Сибирский гид</span>
           </div>
           <nav className="hidden md:flex gap-6">
