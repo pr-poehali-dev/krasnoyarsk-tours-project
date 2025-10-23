@@ -96,7 +96,7 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Mountain" size={28} className="text-primary" />
-            <span className="text-xl font-bold text-primary">Экскурсионный Красноярск</span>
+            <span className="text-xl font-bold text-primary">Сибирский гид</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#tours" className="text-sm font-medium hover:text-primary transition-colors">Экскурсии</a>
