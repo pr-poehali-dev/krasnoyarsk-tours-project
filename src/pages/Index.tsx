@@ -19,9 +19,9 @@ const Index = () => {
       id: 1,
       title: 'Топ. Самая полноценная экскурсия Красноярск-Дивногорск',
       description: 'Индивидуальная экскурсия по знаменитым скалам заповедника "Столбы"',
-      duration: '4-5 часов',
+      duration: '8-9 часов',
       difficulty: 'Средняя',
-      price: 'от 3500 ₽',
+      price: '14 000 ₽',
       image: 'https://cdn.poehali.dev/files/4b434e8b-d7ca-4311-a598-0efb4f8a84e9.jpg'
     },
     {
