@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
@@ -236,10 +237,29 @@ const Index = () => {
                   )}
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full" variant="outline">
-                    <Icon name="MapPin" size={16} className="mr-2" />
-                    Подробнее
-                  </Button>
+                  {tour.fullDescription ? (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button className="w-full" variant="outline">
+                          <Icon name="Info" size={16} className="mr-2" />
+                          Подробнее
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                        <DialogHeader>
+                          <DialogTitle>{tour.title}</DialogTitle>
+                          <DialogDescription className="whitespace-pre-line text-left">
+                            {tour.fullDescription}
+                          </DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+                  ) : (
+                    <Button className="w-full" variant="outline">
+                      <Icon name="MapPin" size={16} className="mr-2" />
+                      Подробнее
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             ))}
