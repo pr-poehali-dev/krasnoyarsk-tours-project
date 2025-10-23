@@ -22,7 +22,7 @@ const Index = () => {
       duration: '4-5 часов',
       difficulty: 'Средняя',
       price: 'от 3500 ₽',
-      image: 'https://cdn.poehali.dev/projects/bfbb56ee-f92a-4bba-90ab-3a6fd5390bd5/files/fd82efd0-214e-4643-ae8a-e8fc84f7a0d0.jpg'
+      image: 'https://cdn.poehali.dev/files/4b434e8b-d7ca-4311-a598-0efb4f8a84e9.jpg'
     },
     {
       id: 2,
