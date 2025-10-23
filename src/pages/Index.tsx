@@ -211,7 +211,7 @@ const Index = () => {
                   <CardDescription>{tour.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex gap-4 text-sm text-muted-foreground">
+                  <div className="flex gap-4 text-sm text-muted-foreground mb-4">
                     <div className="flex items-center gap-1">
                       <Icon name="Clock" size={16} />
                       <span>{tour.duration}</span>
@@ -221,6 +221,18 @@ const Index = () => {
                       <span>{tour.difficulty}</span>
                     </div>
                   </div>
+                  {tour.gallery && tour.gallery.length > 0 && (
+                    <div className="grid grid-cols-2 gap-2">
+                      {tour.gallery.map((img: string, idx: number) => (
+                        <img 
+                          key={idx}
+                          src={img} 
+                          alt={`${tour.title} - фото ${idx + 1}`}
+                          className="w-full h-24 object-cover rounded-md hover:opacity-80 transition-opacity cursor-pointer"
+                        />
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" variant="outline">
